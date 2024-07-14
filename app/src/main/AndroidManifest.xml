@@ -13,9 +13,13 @@
         android:theme="@style/Theme.QZWX"
         tools:targetApi="31">
         <activity
+            android:name=".ALLAPP"
+            android:exported="false"
+            android:label="@string/title_activity_allapp"
+            android:theme="@style/Theme.QZWX" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-
             android:theme="@style/Theme.QZWX">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

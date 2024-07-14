@@ -11,6 +11,6 @@ import androidx.compose.ui.Modifier
 @Composable
 fun ProfileScreen() {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-        Text(text = "Profile Screen")
+        Text(text = "这是我的页面")
     }
 }

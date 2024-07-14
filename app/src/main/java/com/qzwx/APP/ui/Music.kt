@@ -6,11 +6,12 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
 
-// Home 屏幕
+// Search 屏幕
 @Composable
-fun HomeScreen() {
+fun Music(navController: NavHostController) {
     Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-        Text(text = "Home Screen")
+        Text(text = " 这是音乐页面")
     }
 }
