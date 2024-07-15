@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.qzwx.APP.ALLAPPS
+import com.qzwx.APP.ALLAPPS.ALLAPPS
 
 @Composable
 fun All_apps(navController: NavHostController) {

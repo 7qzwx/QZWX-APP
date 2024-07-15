@@ -13,9 +13,11 @@
         android:theme="@style/Theme.QZWX"
         tools:targetApi="31">
         <activity
-            android:name=".ALLAPPS"
+            android:name=".ALLAPPS.JiSuanQiActivity"
             android:exported="false" />
-
+        <activity
+            android:name=".ALLAPPS.ALLAPPS"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"

@@ -1,5 +1,7 @@
 package com.qzwx.APP
 
+import android.R
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -9,8 +11,11 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.qzwx.APP.ui.* // 导入所有 ui 包中的文件
+import com.qzwx.APP.ALLAPPS.JiSuanQiActivity
+import com.qzwx.APP.ui.*
 import com.qzwx.APP.ui.theme.QZWXTheme
+import com.xuexiang.xui.widget.button.roundbutton.RoundButton
+
 
 // 主活动类
 class MainActivity : ComponentActivity() {
@@ -33,5 +38,6 @@ class MainActivity : ComponentActivity() {
                 }
             }
         }
+
     }
 }
