@@ -8,7 +8,7 @@
     android:orientation="vertical"
     tools:context=".ALLAPPS.ALLAPPS">
 
-<!--图片轮播效果修改开始【下】-->
+    <!-- 图片轮播效果修改开始【下】 -->
     <com.xuexiang.xui.widget.banner.recycler.BannerLayout
         android:id="@+id/bl_horizontal"
         android:layout_width="match_parent"
@@ -18,34 +18,66 @@
         app:bl_itemSpace="10dp"
         app:bl_moveSpeed="1.8"
         tools:ignore="MissingConstraints" />
-<!--图片轮播效果修改结束【上】-->
+    <!-- 图片轮播效果修改结束【上】 -->
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <!-- 计算器按钮 -->
+        <com.xuexiang.xui.widget.button.shadowbutton.ShadowButton
+            android:id="@+id/btn_JiSuanQi"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/svg_jisuanqi"
+            app:sb_radius="16dp"
+            android:layout_centerVertical="true"/>
+
+        <!-- 计算器文字 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/btn_JiSuanQi"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:text="←计算器"
+            android:textSize="16sp"
+            android:textColor="#000"/>
+
+    </RelativeLayout>
+
+
+
+    <!-- 记账本按钮 -->
     <com.xuexiang.xui.widget.button.roundbutton.RoundButton
-        style="@style/RoundButton.Auto"
-        android:id="@+id/btn_JiSuanQi"
-        android:layout_marginTop="20dp"
-        android:text="计算器"
-        android:textColor="@color/black"
-        app:rb_backgroundColor="@color/xui_btn_green_normal_color"
-        app:rb_borderColor="@color/xui_config_color_red"
-        app:rb_radius="20dp"/>
-    <com.xuexiang.xui.widget.button.roundbutton.RoundButton
-        style="@style/RoundButton.Auto"
         android:id="@+id/btn_JiZhangBen"
+        style="@style/RoundButton.Auto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
         android:text="记账本"
         android:textColor="@color/black"
         app:rb_backgroundColor="@color/xui_btn_green_normal_color"
         app:rb_borderColor="@color/xui_config_color_red"
-        app:rb_radius="20dp"/>
+        app:rb_radius="20dp" />
+
+    <!-- 日记本按钮 -->
     <com.xuexiang.xui.widget.button.roundbutton.RoundButton
-        style="@style/RoundButton.Auto"
         android:id="@+id/btn_RiJiBen"
+        style="@style/RoundButton.Auto"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
         android:text="日记本"
         android:textColor="@color/black"
         app:rb_backgroundColor="@color/xui_btn_green_normal_color"
         app:rb_borderColor="@color/xui_config_color_red"
-        app:rb_radius="20dp"/>
+        app:rb_radius="20dp" />
 
 </LinearLayout>

@@ -13,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.qzwx.APP.R;
 import com.xuexiang.xui.widget.banner.recycler.BannerLayout;
 import com.xuexiang.xui.widget.button.roundbutton.RoundButton;
+import com.xuexiang.xui.widget.shadow.ShadowButton;
 
 import java.util.Arrays;
 import java.util.List;
@@ -27,11 +28,11 @@ public class ALLAPPS extends AppCompatActivity {
         setContentView(R.layout.activity_allapps);
 
         //-----------------按钮点击事件【下】开始--------------------------------------------------------
-        // 获取按钮
-        RoundButton buttonJiSuanQi = findViewById(R.id.btn_JiSuanQi);
-        RoundButton buttonJiZhangBen = findViewById(R.id.btn_JiZhangBen);
-        RoundButton buttonRiJiBen = findViewById(R.id.btn_RiJiBen);
-        // 设置按钮点击事件
+// 获取按钮
+        com.xuexiang.xui.widget.button.shadowbutton.ShadowButton buttonJiSuanQi = findViewById(R.id.btn_JiSuanQi);
+        com.xuexiang.xui.widget.button.roundbutton.RoundButton buttonJiZhangBen = findViewById(R.id.btn_JiZhangBen);
+        com.xuexiang.xui.widget.button.roundbutton.RoundButton buttonRiJiBen = findViewById(R.id.btn_RiJiBen);
+// 设置按钮点击事件
         buttonJiSuanQi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +40,8 @@ public class ALLAPPS extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
 
 //        buttonJiZhangBen.setOnClickListener(new View.OnClickListener() {
 //            @Override
